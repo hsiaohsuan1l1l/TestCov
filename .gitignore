@@ -2,3 +2,13 @@
 .venv
 venv/
 ENV/
+
+# byte-compiled/optimized/DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# unittest/coverage reports
+.coverage
+.coverage.*
+.cache
