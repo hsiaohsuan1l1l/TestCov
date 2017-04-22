@@ -1,6 +1,6 @@
-from TestCov import testcov
+from TestCov import triangle
 
 
 class TestStatementCoverage:
     def test_normal(self):
-        assert testcov.triangle(100, 100, 100) == "Equilateral"
+        assert triangle.Triangle(100, 100, 100) == "Equilateral"
