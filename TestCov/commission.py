@@ -1,11 +1,14 @@
 def Commission(l, s, b):
+    # Validate the range of l/s/b
     if l not in range(-1, 71) or l == 0 or s not in range(1, 81) or b not in range(1, 91):
         return "InvalidInput"
     elif l == -1:
         return "ProgramTerminates"
 
+    # Calculate the sales
     sales = l * 45 + s * 30 + b * 25
 
+    # Calculate the commission
     if sales >= 1800:
         comm = 0.1 * 1000 + 0.15 * 800 + 0.2 * (sales - 1800)
     elif sales >= 1000:
